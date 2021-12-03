@@ -148,7 +148,7 @@ int main()
     cin.getline(str, 9);
     char* ptr = str;
     cout << "yout number : " << StringToNum(ptr);
-    starline();*/
+    starline();
 
     cout << "#2 function (convert number to string)\n";
     int number;
