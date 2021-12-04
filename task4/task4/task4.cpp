@@ -119,18 +119,18 @@ string insteadOf_doubleConsonant(string s) {
 }
 
 string ChangeLanguage(string s) {
-    removeUpperLetters(s);
-    insteadOf_c(s);
-    insteadOf_q(s);
-    insteadOf_qu(s);
-    insteadOf_x(s);
-    insteadOf_w(s);
-    insteadOf_ph(s);
-    insteadOf_you(s);
-    insteadOf_oo(s);
-    insteadOf_ee(s);
-    insteadOf_th(s);
-    insteadOf_doubleConsonant(s);
+    s = removeUpperLetters(s);
+    s = insteadOf_c(s);
+    s = insteadOf_q(s);
+    s = insteadOf_qu(s);
+    s = insteadOf_x(s);
+    s = insteadOf_w(s);
+    s = insteadOf_ph(s);
+    s = insteadOf_you(s);
+    s = insteadOf_oo(s);
+    s = insteadOf_ee(s);
+    s = insteadOf_th(s);
+    s = insteadOf_doubleConsonant(s);
     return s;
 }
 
@@ -138,7 +138,7 @@ int main()
 {
     string s;
     getline(cin, s);
-    string s2 = insteadOf_doubleConsonant(s);
-    cout << s2;
+    s = ChangeLanguage(s);
+    cout << s;
     return 0;
 }
