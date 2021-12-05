@@ -33,8 +33,6 @@ int countNum(string s) {
     return sum;
 }
 
-
-
 int main()
 {
     string s;
