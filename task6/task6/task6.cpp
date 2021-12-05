@@ -3,7 +3,7 @@
 using namespace std;
 
 long long fact(int a) {
-    if (a == 1) {
+    if (a < 1) {
         return 1;
     }
     return a * fact(a - 1);
@@ -11,26 +11,24 @@ long long fact(int a) {
 
 int main()
 {
-    cout << fact(5);
-    string str;
+    string s;
     cout << "enter your string: ";
-    cin >> str;
+    cin >> s;
     cout << "\n";
-    int lenght = str.size();
-    double result = fact(lenght);
-    int duplicates = 0;
+    int lenght = s.size();
+    int res = fact(lenght);
     for (int i = 0; i < lenght; i++) {
+        int duplicates = 1;
         for (int j = i + 1; j < lenght; j++) {
-            if (str[i] == str[j]) {
+            if (s[i] == s[j]) {
                 duplicates++;
             }
         }
+        if (duplicates) {
+            cout << res << " * " << fact(duplicates) << endl;
+            res /= duplicates;
+        }
     }
-    cout << duplicates << endl;
-    if (duplicates) {
-        result /= fact(duplicates);
-    }
-    cout << result;
-
+    cout << res;
     return 0;
 }
