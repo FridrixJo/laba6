@@ -18,7 +18,7 @@ int countNum(string s) {
                     break;
                 }
             }
-            a[m] = re;
+            a[m] = res;
             m++;
             i -= k;
         }
