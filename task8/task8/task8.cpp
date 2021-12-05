@@ -18,9 +18,7 @@ bool isItPossible(string s, string t) {
 	return status;
 }
 
-bool itFits(string s, string t) {
-
-}
+bool itFits(string s, string t) {}
 
 int main() {
 	string s;
