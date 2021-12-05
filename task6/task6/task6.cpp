@@ -25,7 +25,6 @@ int main()
             }
         }
         if (duplicates) {
-            cout << res << " * " << fact(duplicates) << endl;
             res /= duplicates;
         }
     }
