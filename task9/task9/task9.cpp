@@ -22,9 +22,6 @@ int countNum(string s) {
             m++;
             i -= k;
         }
-        else {
-            continue;
-        }
     }
     int sum = 0;
     for (int i = 0; i < m; i++) {
